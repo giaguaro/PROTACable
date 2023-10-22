@@ -1,31 +1,53 @@
 # PROTACable
+![Project Logo](./assets/logo/project-logo.png)
+![Project Scheme](./assets/logo/project-scheme.png)
+
 PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
-
-
-# Project Title
-
-![Project Logo](https://path-to-your-image/logo.png)
-
-A brief introduction to your project.
 
 ## Table of Contents
 
+- [Preliminary](#preliminary)
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
+- [Stage-1](#stage-1)
+- [Stage-2](#stage-2)
+- [Stage-3](#stage-3)
+- [Stage-4](#stage-4)
+- [Stage-5](#stage-5)
 - [Contributing](#contributing)
 - [References](#references)
 - [License](#license)
 
+## Preliminary
+
+## Requirements
+
+Different stages of PROTACable pipeline have variable set of requirements.
+### Conda environment:
+* See [Installation](#installation) below.
+### Linux OS:
+* This toolkit collection had been tested on Centos 8 OS.
+* SLURM scheduler is needed for Stage 2 (protein-protein docking) due to the way the code was implemented.
+### Software:
+* Stage 1: GNINA v1.0 (optional).
+* Stage 2: ProPOSE v2022.
+* Stage 5: Maestro Schrödinger (optional).
+### Hardware:
+* GPU (RAM >=12GB) (optional)
+
+
 ## Installation
 
-To get started with this project, follow these instructions:
+This toolkit collection had been tested on Centos 8 OS.
+To get started with PROTACable, follow these instructions:
 
 ```
-git clone https://github.com/your-username/project-title.git
-cd project-title
-npm install
+git clone https://github.com/giaguaro/PROTACable.git 
+cd PROTACable
+export PROTACable=${pwd}
 ```
+> **Note:** This is a standout point.
 
 (Note: Remove the extra backticks around the code blocks above.)
 
@@ -63,10 +85,6 @@ Details about this component.
 
 #### Component 2
 Details about this component.
-
-## Contributing
-
-We welcome contributions! Please see the [CONTRIBUTING.md](./CONTRIBUTING.md) file for more details.
 
 ## References
 
