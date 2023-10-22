@@ -39,7 +39,6 @@ Different stages of PROTACable pipeline have variable set of requirements.
 
 ## Installation
 
-This toolkit collection had been tested on Centos 8 OS.
 To get started with PROTACable, follow these instructions:
 
 ```
@@ -47,7 +46,21 @@ git clone https://github.com/giaguaro/PROTACable.git
 cd PROTACable
 export PROTACable=${pwd}
 ```
-> **Note:** This is a standout point.
+
+### Conda environment:
+
+```
+conda env create -f PROTACable.yml
+```
+> **Note:** This may look like a complicated environment (and it is). It is important to take note of the most important packages and build the environment gradually. Although unconventional, you may want to create an additional environment where intractable packages are installed and then move those packages back to the PROTACable environment packages directory.
+
+### Software:
+
+- **GNINA**: Please refer to GNINA official repository - https://github.com/gnina/gnina
+Once installed 
+- **ProPOSE**: Please refer to ProPOSE official website for academic licensing - https://mm.nrc-cnrc.gc.ca/ccbpub/propose_main.php
+- **Maestro**: Please refer to Maestro official website for download and tokens - https://www.schrodinger.com/products/maestro
+
 
 (Note: Remove the extra backticks around the code blocks above.)
 
