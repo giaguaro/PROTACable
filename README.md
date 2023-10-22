@@ -21,11 +21,11 @@ A brief introduction to your project.
 
 To get started with this project, follow these instructions:
 
-\```
+```
 git clone https://github.com/your-username/project-title.git
 cd project-title
 npm install
-\```
+```
 
 (Note: Remove the extra backticks around the code blocks above.)
 
