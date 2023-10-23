@@ -105,6 +105,9 @@ python $PROTACable/PROTACable_stage_1/make_variations.py <ligand in PDB format> 
 ```
 > **Tip:** Once you decide on the atom you think is apt for linker ligation (usually an atom that is in maximally solvent exposed moiety), you may take note of the atom number (atom label). You can then find the corresponding index by opening the PDB file in a text viewer and locating the atom with the sought atom number. The exit vector will be exactly that atom's serial number. Refer to [PDB format guide](https://www.biostat.jhsph.edu/~iruczins/teaching/260.655/links/pdbformat.pdf) for further clarification.
 
+This will generate two variations with carboxyl ```C(=O)O``` ${outout_prefix}_carboxyl.pdb and amide ```C(=O)N``` ${outout_prefix}_amide.pdb files as well the original unmodified ligand pose ${outout_prefix}_original.pdb.
+
+
 ```
 ```
 from project_title import AwesomeFeature
