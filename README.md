@@ -34,7 +34,7 @@ Different stages of PROTACable pipeline have variable set of requirements.
 * Stage 2: ProPOSE v2022.
 * Stage 5: Maestro Schrödinger (optional).
 ### Hardware:
-* GPU (RAM >=12GB) (optional)
+* CUDA >= 11.0 (optional)
 
 
 ## Installation
@@ -59,10 +59,17 @@ conda env create -f PROTACable.yml
 
 - **GNINA**: Please refer to GNINA official repository - https://github.com/gnina/gnina
   
-Once GNINA is installed place it in the ```PROTACable_stage_1/utilities directory.```
+Once GNINA is installed place it in the ```PROTACable_stage_1/utilities``` directory.
  
 - **ProPOSE**: Please refer to ProPOSE official website for academic licensing - https://mm.nrc-cnrc.gc.ca/ccbpub/propose_main.php
+
+Once ProPOSE software and license is obtained place them in the ```PROTACable_stage_2/ProPOSE``` directory.
+
+*Optional*
+
 - **Maestro**: Please refer to Maestro official website for download and tokens - https://www.schrodinger.com/products/maestro
+
+Only Maestro's PrepWizard will be used f
 
 
 (Note: Remove the extra backticks around the code blocks above.)
