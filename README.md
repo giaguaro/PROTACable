@@ -74,7 +74,7 @@ Only Maestro's PrepWizard will be used and will be used only in Stage 5. This to
 
 ## Usage
 
-Due to the complexity of the pipeline, each stage was kept operating separately such that there is a finer control over the output before the subsequent stage is activated. The majority of the stages in the pipeline do more than one task. To get familiar with the tasks refer to our paper: [doi link here].
+Due to the complexity of the pipeline, each stage was kept operating separately such that there is a finer control over the output before the subsequent stage is activated. The majority of the stages in the pipeline do more than one task. To get familiar with the tasks refer to our paper: [**doi link here**].
 
 First, you need to define the PROTACable environment:
 
@@ -90,9 +90,14 @@ sh $PROTACable/test_installation.sh
 
 ### Stage 1: Docking POI and Elaborating Variations
 
-This is the stage 
+This stage is broken into two parts: docking and creating R-group variations for linker ligation.
 
-\```
+You can optionally dock your POI with the cognate ligand (if it's not already complexed with the ligand pose):
+
+```
+sh dock_poi.sh -i <input PDB file> -l <input ligand in SDF format> -w <number of workers>
+```
+
 from project_title import AwesomeFeature
 
 # Initialize
