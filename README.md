@@ -53,11 +53,14 @@ export PROTACable=${pwd}
 conda env create -f PROTACable.yml
 ```
 > **Note:** This may look like a complicated environment (and it is). It is important to take note of the most important packages and build the environment gradually. Although unconventional, you may want to create an additional environment where intractable packages are installed and then move those packages back to the PROTACable environment packages directory.
+> [Follow NVIDIA's instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4TWipdwX1) to install the latest version of CUDA (>= 11.0 is required). Make sure `nvcc` is in your PATH.
 
 ### Software:
 
 - **GNINA**: Please refer to GNINA official repository - https://github.com/gnina/gnina
-Once installed 
+  
+Once GNINA is installed place it in the ```PROTACable_stage_1/utilities directory.```
+ 
 - **ProPOSE**: Please refer to ProPOSE official website for academic licensing - https://mm.nrc-cnrc.gc.ca/ccbpub/propose_main.php
 - **Maestro**: Please refer to Maestro official website for download and tokens - https://www.schrodinger.com/products/maestro
 
