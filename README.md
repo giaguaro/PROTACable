@@ -10,7 +10,7 @@ PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Stage 1: Docking POI and elaborating variations](#stage 1: Docking POI and elaborating variations)
+- [Stage 1: Docking POI and Elaborating Variations](#stage-1-docking-poi-and-elaborating-variations)
 - [Stage-2](#stage-2)
 - [Stage-3](#stage-3)
 - [Stage-4](#stage-4)
