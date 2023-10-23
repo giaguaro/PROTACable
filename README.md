@@ -92,12 +92,21 @@ sh $PROTACable/test_installation.sh
 
 This stage is broken into two parts: docking and creating R-group variations for linker ligation.
 
-You can optionally dock your POI with the cognate ligand (if it's not already complexed with the ligand pose):
++ You can optionally dock your POI with the cognate ligand (if it's not already complexed with the ligand pose):
 
 ```
-sh dock_poi.sh -i <input PDB file> -l <input ligand in SDF format> -w <number of workers>
+sh $PROTACable/PROTACable_stage_1/dock_poi.sh -i <input PDB file> -l <input ligand in SDF format> -w <number of workers>
 ```
 
++ It is recommended to generate variations of the R-group for linker ligation using the docked PDB ligand (generated from above) or by extracting it from an existing PDB file of the POI-Lig complex. You can generated variations programmatically using the PDB file of the ligand and an exit vector. The exit vector here refers to the index which corresponds to the atom you want the linker to be attached to. 
+
+```
+python $PROTACable/PROTACable_stage_1/make_variations.py <ligand in PDB format> <exit vector> <output prefix>
+```
+> **Tip:** Once you decide on the atom you think is apt for linker ligation (usually an atom that is in maximally solvent exposed moiety), you may take note of the atom number (atom label). You can then find the corresponding index by opening the PDB file in a text viewer and locating the atom with the sought atom number. The exit vector will be exactly that atom's serial number. Refer to [PDB format guide](https://www.biostat.jhsph.edu/~iruczins/teaching/260.655/links/pdbformat.pdf) for further clarification.
+
+```
+```
 from project_title import AwesomeFeature
 
 # Initialize
