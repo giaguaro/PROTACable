@@ -32,7 +32,7 @@ Different stages of PROTACable pipeline have variable set of requirements.
 ### Software:
 * Stage 1: GNINA v1.0 (optional).
 * Stage 2: ProPOSE v2022.
-* Stage 5: Maestro Schrödinger (optional).
+* Stage 5: Maestro Schrödinger (Preferred to have).
 ### Hardware:
 * CUDA >= 11.0 (optional)
 
@@ -46,13 +46,14 @@ git clone https://github.com/giaguaro/PROTACable.git
 cd PROTACable
 export PROTACable=${pwd}
 ```
+> **Note:** You need to have the environment variable defined at all times during running any part of the code.
 
 ### Conda environment:
 
 ```
 conda env create -f PROTACable.yml
 ```
-> **Note:** This may look like a complicated environment (and it is). It is important to take note of the most important packages and build the environment gradually. Although unconventional, you may want to create an additional environment where intractable packages are installed and then move those packages back to the PROTACable environment packages directory.
+> **Note:** This may look like a complicated environment (and it is). It is important to take note of the most important packages and build the environment gradually in case making the environemnt proves intractable for certain cases. Although it could be an unconventional approach, you may want to create an additional environment where conflicting packages are installed and then move those packages back to the PROTACable environment packages directory.
 > [Follow NVIDIA's instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4TWipdwX1) to install the latest version of CUDA (>= 11.0 is required). Make sure `nvcc` is in your PATH.
 
 ### Software:
@@ -65,18 +66,20 @@ Once GNINA is installed place it in the ```PROTACable_stage_1/utilities``` direc
 
 Once ProPOSE software and license is obtained place them in the ```PROTACable_stage_2/ProPOSE``` directory.
 
-*Optional*
+*Preferred*
 
 - **Maestro**: Please refer to Maestro official website for download and tokens - https://www.schrodinger.com/products/maestro
 
-Only Maestro's PrepWizard will be used f
+Only Maestro's PrepWizard will be used and will be used only in Stage 5. This tool will serve the purpose of minimization of the selected ternary complexes modelled throughout the pipeline. 
 
 
 (Note: Remove the extra backticks around the code blocks above.)
 
 ## Usage
 
-Here's a basic example of how to use this project:
+Due to the complexity of the pipeline, each stage was kept operating separately such that there is a finer control over the results before the subsequent stage is activated. 
+
+
 
 \```
 from project_title import AwesomeFeature
