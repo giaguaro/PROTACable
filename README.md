@@ -1,5 +1,4 @@
 # PROTACable
-![Project Logo](./assets/project-logo.png)
 ![Project Scheme](./assets/project-scheme.png)
 
 PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
