@@ -88,6 +88,11 @@ export PROTACable=/path/to/PROTACable/directory
 sh $PROTACable/test_installation.sh
 ```
 
+Once installation is verified, commence with a new directory where you have the necessary pre-requisites: 
+
+* POI in PDB format
+* Ligand in PDB or SDF format
+
 ### Stage 1: Docking POI and Elaborating Variations
 
 This stage is broken into two parts: docking and creating R-group variations for linker ligation.
@@ -107,38 +112,61 @@ python $PROTACable/PROTACable_stage_1/make_variations.py <ligand in PDB format> 
 
 This will generate two variations with carboxyl ```C(=O)O``` ${outout_prefix}_carboxyl.pdb and amide ```C(=O)N``` ${outout_prefix}_amide.pdb files as well the original unmodified ligand pose ${outout_prefix}_original.pdb.
 
+Next, you need to "radiolabel" the POI such that the exit vector is updated to reflect the new linker attachment site. The new exit vector for the amide and carboxyl variations are usually the last atom in the HETATM records.
 
 ```
+python $PROTACable/PROTACable_stage_1/radiolabel_poi.py <pdb_file_path> <exit_vector_index> 
 ```
-from project_title import AwesomeFeature
 
-# Initialize
-feature = AwesomeFeature()
+### Stage 2: POI-E3 Docking and Pose Filtering
 
-# Use the feature
-result = feature.do_something_cool()
-print(result)
-\```
+Once you have the R-group added and the "radiolabel" assigned, you may choose all of the variations to proceed with. However, due to the high computational requirement of this stage, it is recommended that you abide with one of the variations such as the amide R-group. 
 
-(Note: Remove the extra backticks around the code blocks above.)
+Start by combining the variation ligand with the POI:
 
-## Features
+```
+grep "^HETATM" POI_Lig_amide.pdb > POI_Lig_amide_clean.pdb
+grep "^ATOM" POI.pdb > POI_clean.pdb
+cat POI_Lig_amide_clean.pdb POI_clean.pdb >> POI_Lig_amide_complex.pdb
+```
 
-### Feature 1
+Now you can issue the docking commands:
 
-![Feature 1 Screenshot](https://path-to-your-image/feature1.png)
+```
+sbatch $PROTACable/PROTACable_stage_2/main.sh -P POI_Lig_amide_complex.pdb
+```
 
-A brief description of this feature.
+This will generate a ```ternaries``` directory with different E3 ligase - Ligand complex docking solutions. 
 
-### Feature 2
+> **Note:** The E3 library is pre-prepared and contains 86 unique E3 ligase-ligand complexes. Nevertheless, most of the diversity in the E3 ligase library comes from the ligands variations. 
 
-Sub-headings can be used to describe sub-features or components:
+### Stage 3: Linker Ligation and Pose Filtering
 
-#### Component 1
-Details about this component.
+From the previous step you should have a ```ternaries``` directory with 86 subdirectories - each containing 20 filtered PROTAC-productive poses. 
 
-#### Component 2
-Details about this component.
+We can now proceed with linker ligation. A library of 1236 linkers will be leveraged to attempt linker bridging between the POI and E3 cognate ligands for each of the 86 E3 ligase variation. In the process, many linkers will fail candidacy because the 'unlinked' ternary complex does not provide a feasible path for those linkers. 
+
+Very simply, you can issue this command:
+
+```
+sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
+```
+
+The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
+
+### Stage 4: SE(3) Transformer Network Score Prediction
+
+We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
+
+```
+sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/output_stage_3_4/
+```
+
+A ```predictions_and_targets.csv``` will be saved in ```ternaries/output_stage_3_4/``` detailling the probability each ternary complex is active.
+
+In addition, the top 20 predictions are saved in ```ternaries/top_ternaries_results```
+
+
 
 ## References
 
