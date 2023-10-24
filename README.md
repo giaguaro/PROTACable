@@ -1,6 +1,6 @@
 # PROTACable
-![Project Logo](./assets/logo/project-logo.png)
-![Project Scheme](./assets/logo/project-scheme.png)
+![Project Logo](./assets/project-logo.png)
+![Project Scheme](./assets/project-scheme.png)
 
 PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 
@@ -155,24 +155,37 @@ sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
 The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
 
 ### Stage 4: SE(3) Transformer Network Score Prediction
+![SE3 Scheme](./assets/se3_transformer.png)
 
 We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
 
 ```
-sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/output_stage_3_4/
+sh $PROTACable/PROTACable_stage_4/main.sh /path/to/ternaries/output_stage_3_4/
 ```
 
 A ```predictions_and_targets.csv``` will be saved in ```ternaries/output_stage_3_4/``` detailling the probability each ternary complex is active.
 
-In addition, the top 20 predictions are saved in ```ternaries/top_ternaries_results```
+In addition, the top 20 sorted predictions are saved in ```ternaries/top_ternaries_results```
+
+### Stage 5: Ternary Complex Minimization
+
+The final step is essential if you want a sound looking ternary complex. We rely on Maestro's PrepWizard tool to optimize the path for the linker that connects both POI and E3:
+
+```
+sh $PROTACable/PROTACable_stage_5/main.sh /path/to/top_ternaries_results
+```
+
+The final results will be stored in ```ternaries_minimized```
+
+This marks the end of the PROTACable modelling pipeline. 
 
 
 
 ## References
 
-1. [Reference Title](https://www.example.com) - A short description of this reference.
-2. Author Name, "Paper Title", Journal Name, Year. [Link to paper](https://www.example-paper.com)
+1. McNutt, A.T., Francoeur, P., Aggarwal, R. et al. GNINA 1.0: molecular docking with deep learning. J Cheminform 13, 43 (2021). [Link to paper](https://doi.org/10.1186/s13321-021-00522-2).
+2. Hogues, Hervé, et al. “ProPOSE: Direct Exhaustive Protein–Protein Docking with Side Chain Flexibility.” Journal of Chemical Theory and Computation, vol. 14, no. 9, 2018, pp. 4938–47.[Link to paper](https://doi.org/10.1021/acs.jctc.8b00225)
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
