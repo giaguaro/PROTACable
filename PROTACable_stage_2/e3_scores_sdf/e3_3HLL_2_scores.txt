@@ -1,0 +1,2 @@
+e3_3HLL_2_scores.txt
+Cereblon_3HLL_2.pdb,-20.604925

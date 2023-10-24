@@ -1,0 +1,2 @@
+e3_6VS3_11_scores.txt
+VHL_6VS3_11.pdb,-8.019946

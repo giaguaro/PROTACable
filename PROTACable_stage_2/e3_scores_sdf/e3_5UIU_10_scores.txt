@@ -1,0 +1,2 @@
+e3_5UIU_10_scores.txt
+VHL_5UIU_10.pdb,-20.418171

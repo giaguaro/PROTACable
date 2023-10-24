@@ -1,0 +1,2 @@
+e3_1EJ1_16_scores.txt
+VHL_1EJ1_16.pdb,-12.133142

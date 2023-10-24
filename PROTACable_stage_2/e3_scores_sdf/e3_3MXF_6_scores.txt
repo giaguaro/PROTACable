@@ -1,0 +1,2 @@
+e3_3MXF_6_scores.txt
+VHL_3MXF_6.pdb,-16.704986

@@ -1,0 +1,2 @@
+e3_5T8E_51_scores.txt
+VHL_5T8E_51.pdb,-11.167817

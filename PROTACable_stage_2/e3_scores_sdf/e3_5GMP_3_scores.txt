@@ -1,0 +1,2 @@
+e3_5GMP_3_scores.txt
+Mdm2_5GMP_3.pdb,-10.102229

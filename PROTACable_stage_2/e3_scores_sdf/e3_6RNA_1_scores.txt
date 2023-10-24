@@ -1,0 +1,2 @@
+e3_6RNA_1_scores.txt
+IAPBIR2_6RNA_1.pdb,-14.929407

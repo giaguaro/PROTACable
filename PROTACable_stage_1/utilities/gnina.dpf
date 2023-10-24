@@ -1,0 +1,15 @@
+center_x = 
+center_y = 
+center_z = 
+
+size_x = 20
+size_y = 20     
+size_z = 20
+
+exhaustiveness = 16
+
+cpu = 
+addH=off 
+                                         
+num_modes = 1
+min_rmsd_filter = 2

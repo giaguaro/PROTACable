@@ -1,0 +1,2 @@
+e3_4IM0_27_scores.txt
+VHL_4IM0_27.pdb,-15.492924

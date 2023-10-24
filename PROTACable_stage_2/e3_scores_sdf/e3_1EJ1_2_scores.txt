@@ -1,0 +1,2 @@
+e3_1EJ1_2_scores.txt
+Cereblon_1EJ1_2.pdb,-11.365207
