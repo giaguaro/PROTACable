@@ -1,2 +1,0 @@
-e3_1HWK_1_scores.txt
-Cereblon_1HWK_1.pdb,-17.770283

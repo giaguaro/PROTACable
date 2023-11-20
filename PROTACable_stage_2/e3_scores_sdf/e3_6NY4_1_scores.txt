@@ -1,2 +1,0 @@
-e3_6NY4_1_scores.txt
-VHL_6NY4_1.pdb,-9.299407

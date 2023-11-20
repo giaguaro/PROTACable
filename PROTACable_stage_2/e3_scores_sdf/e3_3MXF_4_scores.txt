@@ -1,2 +1,0 @@
-e3_3MXF_4_scores.txt
-VHL_3MXF_4.pdb,-20.349797

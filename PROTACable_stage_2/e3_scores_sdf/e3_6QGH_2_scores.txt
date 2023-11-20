@@ -1,2 +1,0 @@
-e3_6QGH_2_scores.txt
-IAPBIR2_6QGH_2.pdb,-10.128683

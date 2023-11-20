@@ -1,2 +1,0 @@
-e3_4QNQ_64_scores.txt
-cIAP1_4QNQ_64.pdb,-8.26981

@@ -1,2 +1,0 @@
-e3_1FKH_1_scores.txt
-Cereblon_1FKH_1.pdb,-17.795211

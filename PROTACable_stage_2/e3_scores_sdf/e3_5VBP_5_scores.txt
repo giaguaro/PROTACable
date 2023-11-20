@@ -1,2 +1,0 @@
-e3_5VBP_5_scores.txt
-VHL_5VBP_5.pdb,-23.8852

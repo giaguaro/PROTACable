@@ -1,2 +1,0 @@
-e3_5T8E_15_scores.txt
-VHL_5T8E_15.pdb,-0.614517

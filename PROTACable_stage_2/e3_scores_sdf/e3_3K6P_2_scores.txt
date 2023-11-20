@@ -1,2 +1,0 @@
-e3_3K6P_2_scores.txt
-Ubr1_3K6P_2.pdb,-9.550458

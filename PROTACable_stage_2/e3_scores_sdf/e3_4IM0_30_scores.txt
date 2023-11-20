@@ -1,2 +1,0 @@
-e3_4IM0_30_scores.txt
-VHL_4IM0_30.pdb,-5.73308

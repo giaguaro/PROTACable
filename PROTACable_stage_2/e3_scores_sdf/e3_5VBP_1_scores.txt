@@ -1,2 +1,0 @@
-e3_5VBP_1_scores.txt
-Cereblon_5VBP_1.pdb,-21.812121
