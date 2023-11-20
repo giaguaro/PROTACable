@@ -1,2 +1,0 @@
-e3_3MXF_42_scores.txt
-RNF4_3MXF_42.pdb,-17.755434

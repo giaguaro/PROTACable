@@ -1,2 +1,0 @@
-e3_5L2I_11_scores.txt
-IAPBIR2_5L2I_11.pdb,-20.40123

@@ -1,2 +1,0 @@
-e3_4CI3_27_scores.txt
-VHL_4CI3_27.pdb,-9.710474

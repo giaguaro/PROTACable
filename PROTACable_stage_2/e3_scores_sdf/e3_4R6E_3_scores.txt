@@ -1,2 +1,0 @@
-e3_4R6E_3_scores.txt
-Mdm2_4R6E_3.pdb,-15.72203

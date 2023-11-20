@@ -1,2 +1,0 @@
-e3_4QNQ_56_scores.txt
-IAPBIR2_4QNQ_56.pdb,-16.095617

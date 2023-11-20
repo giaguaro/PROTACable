@@ -1,2 +1,0 @@
-e3_2VTI_22_scores.txt
-Cereblon_2VTI_22.pdb,-13.899926
