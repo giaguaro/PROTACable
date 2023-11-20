@@ -1,0 +1,35 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:37 2023 
+HETATM    1  N91 UNL A   1       0.135   3.916   0.000  1.00  0.00           N1+
+HETATM    2  C   UNL A   1       1.455   4.628   0.000  1.00  0.00           C  
+HETATM    3  C   UNL A   1       2.732   3.841   0.000  1.00  0.00           C  
+HETATM    4  C   UNL A   1       4.052   4.553   0.000  1.00  0.00           C  
+HETATM    5  C94 UNL A   1       5.329   3.765   0.000  1.00  0.00           C  
+HETATM    6  H   UNL A   1       0.118   3.333   0.825  1.00  0.00           H  
+HETATM    7  H   UNL A   1      -0.621   4.585   0.031  1.00  0.00           H  
+HETATM    8  H   UNL A   1       1.473   5.257  -0.890  1.00  0.00           H  
+HETATM    9  H   UNL A   1       1.473   5.257   0.890  1.00  0.00           H  
+HETATM   10  H   UNL A   1       2.714   3.212   0.890  1.00  0.00           H  
+HETATM   11  H   UNL A   1       2.714   3.212  -0.890  1.00  0.00           H  
+HETATM   12  H   UNL A   1       4.070   5.182  -0.890  1.00  0.00           H  
+HETATM   13  H   UNL A   1       4.070   5.182   0.890  1.00  0.00           H  
+HETATM   14  H   UNL A   1       5.311   3.136  -0.890  1.00  0.00           H  
+HETATM   15  H   UNL A   1       5.311   3.136   0.890  1.00  0.00           H  
+HETATM   16  H   UNL A   1       6.217   4.397   0.000  1.00  0.00           H  
+CONECT    1    2    6    7
+CONECT    2    1    3    8    9
+CONECT    3    2    4   10   11
+CONECT    4    3    5   12   13
+CONECT    5    4   14   15   16
+CONECT    6    1
+CONECT    7    1
+CONECT    8    2
+CONECT    9    2
+CONECT   10    3
+CONECT   11    3
+CONECT   12    4
+CONECT   13    4
+CONECT   14    5
+CONECT   15    5
+CONECT   16    5
+END

@@ -1,0 +1,2 @@
+e3_3K6P_1_scores.txt
+Ubr1_3K6P_1.pdb,-1.905808

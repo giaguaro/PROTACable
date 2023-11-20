@@ -1,0 +1,51 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:37 2023 
+HETATM    1  O91 UNL A   1     -10.020   3.652   0.000  1.00  0.00           O  
+HETATM    2  C   UNL A   1      -9.270   2.352   0.000  1.00  0.00           C  
+HETATM    3  C   UNL A   1      -7.770   2.352   0.000  1.00  0.00           C  
+HETATM    4  O   UNL A   1      -7.020   1.053   0.000  1.00  0.00           O  
+HETATM    5  C   UNL A   1      -5.520   1.053   0.000  1.00  0.00           C  
+HETATM    6  C   UNL A   1      -4.770   2.352   0.000  1.00  0.00           C  
+HETATM    7  N   UNL A   1      -3.270   2.352   0.000  1.00  0.00           N1+
+HETATM    8  C   UNL A   1      -2.520   3.652   0.000  1.00  0.00           C  
+HETATM    9  O   UNL A   1      -3.270   4.951   0.000  1.00  0.00           O  
+HETATM   10  C94 UNL A   1      -1.020   3.652   0.000  1.00  0.00           C  
+HETATM   11  O   UNL A   1      -0.270   4.951   0.000  1.00  0.00           O  
+HETATM   12  H   UNL A   1      -9.751   4.142  -0.780  1.00  0.00           H  
+HETATM   13  H   UNL A   1      -0.539   5.441  -0.780  1.00  0.00           H  
+HETATM   14  H   UNL A   1      -9.585   1.807  -0.890  1.00  0.00           H  
+HETATM   15  H   UNL A   1      -9.585   1.807   0.890  1.00  0.00           H  
+HETATM   16  H   UNL A   1      -7.455   2.897   0.890  1.00  0.00           H  
+HETATM   17  H   UNL A   1      -7.455   2.897  -0.890  1.00  0.00           H  
+HETATM   18  H   UNL A   1      -5.205   0.508  -0.890  1.00  0.00           H  
+HETATM   19  H   UNL A   1      -5.205   0.508   0.890  1.00  0.00           H  
+HETATM   20  H   UNL A   1      -5.085   2.897   0.890  1.00  0.00           H  
+HETATM   21  H   UNL A   1      -5.085   2.897  -0.890  1.00  0.00           H  
+HETATM   22  H   UNL A   1      -2.765   1.477   0.000  1.00  0.00           H  
+HETATM   23  H   UNL A   1      -0.705   3.107  -0.890  1.00  0.00           H  
+HETATM   24  H   UNL A   1      -0.705   3.107   0.890  1.00  0.00           H  
+CONECT    1   12    2
+CONECT    2    1    3   14   15
+CONECT    3    2    4   16   17
+CONECT    4    3    5
+CONECT    5    4    6   18   19
+CONECT    6    5    7   20   21
+CONECT    7    6    8   22
+CONECT    8    7    9   10
+CONECT    9    8
+CONECT   10    8   11   23   24
+CONECT   11   10   13
+CONECT   12    1
+CONECT   13   11
+CONECT   14    2
+CONECT   15    2
+CONECT   16    3
+CONECT   17    3
+CONECT   18    5
+CONECT   19    5
+CONECT   20    6
+CONECT   21    6
+CONECT   22    7
+CONECT   23   10
+CONECT   24   10
+END

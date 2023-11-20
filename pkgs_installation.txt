@@ -1,0 +1,43 @@
+# PROTACable Environment Setup
+
+To set up the `PROTACable` environment, follow these steps:
+
+```bash
+# Create the Conda Environment
+conda create --name PROTACable python=3.8
+
+# Install PyTorch and Related Packages
+conda install --no-channel-priority pytorch pytorch-gpu torchvision pytorch-lightning cudatoolkit=11.2 -c pytorch -c conda-forge -y
+
+# Install PyMOL
+conda install --no-channel-priority -c schrodinger pymol -y
+
+# Install AmberTools
+conda install --no-channel-priority -c conda-forge ambertools=21.9 -y
+
+# Install OpenBabel
+conda install --no-channel-priority -c "conda-forge/label/cf202003" openbabel -y
+
+# Install PDBFixer
+conda install --no-channel-priority -c conda-forge pdbfixer -y
+
+# Install GCC
+conda install --no-channel-priority -c conda-forge gcc=9.4.0 -y
+
+# Install GXX
+conda install --no-channel-priority -c conda-forge gxx -y
+
+# Set Library Path
+export LD_LIBRARY_PATH=/home/${USER}/.conda/envs/PROTACable/lib/:$LD_LIBRARY_PATH
+
+# Install Additional Python Packages
+pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.11+cu112.html
+pip install dgl-cu111
+pip install joblib
+pip install git+https://github.com/bp-kelley/descriptastorus
+pip install biopython
+pip install matplotlib
+pip install biopandas
+pip install cython
+```
+

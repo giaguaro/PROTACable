@@ -1,0 +1,77 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:38 2023 
+HETATM    1  C91 UNL A   1       9.959 -14.328   0.000  1.00  0.00           C2-
+HETATM    2  C   UNL A   1       8.683 -15.117   0.000  1.00  0.00           C2-
+HETATM    3  C   UNL A   1       7.407 -15.905   0.000  1.00  0.00           C  
+HETATM    4  C   UNL A   1       6.086 -15.194   0.000  1.00  0.00           C  
+HETATM    5  N   UNL A   1       4.810 -15.982   0.000  1.00  0.00           N1+
+HETATM    6  C   UNL A   1       4.855 -17.481   0.000  1.00  0.00           C  
+HETATM    7  N   UNL A   1       3.578 -18.270   0.000  1.00  0.00           N1+
+HETATM    8  C   UNL A   1       2.258 -17.559   0.000  1.00  0.00           C  
+HETATM    9  C   UNL A   1       0.982 -18.347   0.000  1.00  0.00           C  
+HETATM   10  N   UNL A   1       1.026 -19.846   0.000  1.00  0.00           N1+
+HETATM   11  C   UNL A   1      -0.250 -20.634   0.000  1.00  0.00           C  
+HETATM   12  C94 UNL A   1      -1.571 -19.923   0.000  1.00  0.00           C  
+HETATM   13  C   UNL A   1      -2.847 -20.712   0.000  1.00  0.00           C  
+HETATM   14  C   UNL A   1       2.347 -20.557   0.000  1.00  0.00           C  
+HETATM   15  C   UNL A   1       3.623 -19.769   0.000  1.00  0.00           C  
+HETATM   16  C   UNL A   1       6.175 -18.192   0.000  1.00  0.00           C  
+HETATM   17  C   UNL A   1       7.452 -17.404   0.000  1.00  0.00           C  
+HETATM   18  H   UNL A   1      10.865 -13.768   0.000  1.00  0.00           H  
+HETATM   19  H   UNL A   1       6.054 -14.114   0.000  1.00  0.00           H  
+HETATM   20  H   UNL A   1       2.239 -16.930   0.890  1.00  0.00           H  
+HETATM   21  H   UNL A   1       2.239 -16.930  -0.890  1.00  0.00           H  
+HETATM   22  H   UNL A   1       0.428 -18.049  -0.890  1.00  0.00           H  
+HETATM   23  H   UNL A   1       0.428 -18.049   0.890  1.00  0.00           H  
+HETATM   24  H   UNL A   1       1.026 -19.846   1.010  1.00  0.00           H  
+HETATM   25  H   UNL A   1      -0.231 -21.263  -0.890  1.00  0.00           H  
+HETATM   26  H   UNL A   1      -0.231 -21.263   0.890  1.00  0.00           H  
+HETATM   27  H   UNL A   1      -1.590 -19.294   0.890  1.00  0.00           H  
+HETATM   28  H   UNL A   1      -1.590 -19.294  -0.890  1.00  0.00           H  
+HETATM   29  H   UNL A   1      -2.828 -21.341   0.890  1.00  0.00           H  
+HETATM   30  H   UNL A   1      -2.828 -21.341  -0.890  1.00  0.00           H  
+HETATM   31  H   UNL A   1      -3.736 -20.081   0.000  1.00  0.00           H  
+HETATM   32  H   UNL A   1       2.366 -21.186   0.890  1.00  0.00           H  
+HETATM   33  H   UNL A   1       2.366 -21.186  -0.890  1.00  0.00           H  
+HETATM   34  H   UNL A   1       4.177 -20.067  -0.890  1.00  0.00           H  
+HETATM   35  H   UNL A   1       4.177 -20.067   0.890  1.00  0.00           H  
+HETATM   36  H   UNL A   1       6.207 -19.272   0.000  1.00  0.00           H  
+HETATM   37  H   UNL A   1       8.403 -17.916   0.000  1.00  0.00           H  
+CONECT    1   18    2
+CONECT    2    1    3
+CONECT    3    2    4   17
+CONECT    4    3    5   19
+CONECT    5    4    6
+CONECT    6    5    7   16
+CONECT    7    6    8   15
+CONECT    8    7    9   20   21
+CONECT    9    8   10   22   23
+CONECT   10    9   11   14   24
+CONECT   11   10   12   25   26
+CONECT   12   11   13   27   28
+CONECT   13   12   29   30   31
+CONECT   14   10   15   32   33
+CONECT   15    7   14   34   35
+CONECT   16    6   17   36
+CONECT   17    3   16   37
+CONECT   18    1
+CONECT   19    4
+CONECT   20    8
+CONECT   21    8
+CONECT   22    9
+CONECT   23    9
+CONECT   24   10
+CONECT   25   11
+CONECT   26   11
+CONECT   27   12
+CONECT   28   12
+CONECT   29   13
+CONECT   30   13
+CONECT   31   13
+CONECT   32   14
+CONECT   33   14
+CONECT   34   15
+CONECT   35   15
+CONECT   36   16
+CONECT   37   17
+END

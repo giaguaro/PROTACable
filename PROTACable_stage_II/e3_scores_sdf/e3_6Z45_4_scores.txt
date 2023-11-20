@@ -1,0 +1,2 @@
+e3_6Z45_4_scores.txt
+Cereblon_6Z45_4.pdb,-15.152219

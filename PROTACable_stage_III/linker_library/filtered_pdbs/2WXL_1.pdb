@@ -1,0 +1,45 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:37 2023 
+HETATM    1  C91 UNL A   1      13.284  -0.843   0.000  1.00  0.00           C  
+HETATM    2  C   UNL A   1      14.034   0.456   0.000  1.00  0.00           C  
+HETATM    3  C   UNL A   1      15.534   0.456   0.000  1.00  0.00           C  
+HETATM    4  C   UNL A   1      16.284   1.756   0.000  1.00  0.00           C  
+HETATM    5  C   UNL A   1      17.784   1.756   0.000  1.00  0.00           C  
+HETATM    6  C   UNL A   1      18.534   3.055   0.000  1.00  0.00           C  
+HETATM    7  O   UNL A   1      17.784   4.354   0.000  1.00  0.00           O  
+HETATM    8  N   UNL A   1      20.034   3.055   0.000  1.00  0.00           N1+
+HETATM    9  H   UNL A   1      15.969   2.301   0.890  1.00  0.00           H  
+HETATM   10  H   UNL A   1      15.969   2.301  -0.890  1.00  0.00           H  
+HETATM   11  H   UNL A   1      13.599  -1.388  -0.890  1.00  0.00           H  
+HETATM   12  H   UNL A   1      13.599  -1.388   0.890  1.00  0.00           H  
+HETATM   13  H   UNL A   1      12.202  -0.709   0.000  1.00  0.00           H  
+HETATM   14  H   UNL A   1      13.719   1.001   0.890  1.00  0.00           H  
+HETATM   15  H   UNL A   1      13.719   1.001  -0.890  1.00  0.00           H  
+HETATM   16  H   UNL A   1      15.849  -0.089  -0.890  1.00  0.00           H  
+HETATM   17  H   UNL A   1      15.849  -0.089   0.890  1.00  0.00           H  
+HETATM   18  H   UNL A   1      18.099   1.211   0.890  1.00  0.00           H  
+HETATM   19  H   UNL A   1      18.099   1.211  -0.890  1.00  0.00           H  
+HETATM   20  H   UNL A   1      20.539   3.930   0.000  1.00  0.00           H  
+HETATM   21  H   UNL A   1      20.539   2.180   0.000  1.00  0.00           H  
+CONECT    1    2   11   12   13
+CONECT    2    1    3   14   15
+CONECT    3    2    4   16   17
+CONECT    4    3    9   10    5
+CONECT    5    4   18   19    6
+CONECT    6    5    7    8
+CONECT    7    6
+CONECT    8    6   20   21
+CONECT    9    4
+CONECT   10    4
+CONECT   11    1
+CONECT   12    1
+CONECT   13    1
+CONECT   14    2
+CONECT   15    2
+CONECT   16    3
+CONECT   17    3
+CONECT   18    5
+CONECT   19    5
+CONECT   20    8
+CONECT   21    8
+END

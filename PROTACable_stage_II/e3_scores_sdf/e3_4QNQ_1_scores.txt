@@ -1,0 +1,2 @@
+e3_4QNQ_1_scores.txt
+VHL_4QNQ_1.pdb,-14.288011

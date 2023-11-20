@@ -1,0 +1,2 @@
+e3_5T8E_6_scores.txt
+VHL_5T8E_6.pdb,-6.313926

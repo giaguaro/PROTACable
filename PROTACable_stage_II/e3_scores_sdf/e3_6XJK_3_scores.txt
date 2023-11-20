@@ -1,0 +1,2 @@
+e3_6XJK_3_scores.txt
+cIAP1_6XJK_3.pdb,-11.849543

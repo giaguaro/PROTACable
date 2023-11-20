@@ -1,0 +1,2 @@
+e3_2VTI_21_scores.txt
+Cereblon_2VTI_21.pdb,-22.263603

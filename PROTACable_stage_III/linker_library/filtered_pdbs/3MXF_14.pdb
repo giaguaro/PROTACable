@@ -1,0 +1,39 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:37 2023 
+HETATM    1  O   UNL A   1       6.570  -6.570   0.000  1.00  0.00           O  
+HETATM    2  C   UNL A   1       6.570  -5.070   0.000  1.00  0.00           C  
+HETATM    3  N94 UNL A   1       7.869  -4.320   0.000  1.00  0.00           N1+
+HETATM    4  C   UNL A   1       5.271  -4.320   0.000  1.00  0.00           C  
+HETATM    5  C   UNL A   1       3.972  -5.070   0.000  1.00  0.00           C  
+HETATM    6  C   UNL A   1       2.673  -4.320   0.000  1.00  0.00           C  
+HETATM    7  C91 UNL A   1       1.374  -5.070   0.000  1.00  0.00           C  
+HETATM    8  H   UNL A   1       7.869  -3.310   0.000  1.00  0.00           H  
+HETATM    9  H   UNL A   1       8.744  -4.825   0.000  1.00  0.00           H  
+HETATM   10  H   UNL A   1       5.271  -3.691  -0.890  1.00  0.00           H  
+HETATM   11  H   UNL A   1       5.271  -3.691   0.890  1.00  0.00           H  
+HETATM   12  H   UNL A   1       3.972  -5.699   0.890  1.00  0.00           H  
+HETATM   13  H   UNL A   1       3.972  -5.699  -0.890  1.00  0.00           H  
+HETATM   14  H   UNL A   1       2.673  -3.691  -0.890  1.00  0.00           H  
+HETATM   15  H   UNL A   1       2.673  -3.691   0.890  1.00  0.00           H  
+HETATM   16  H   UNL A   1       1.374  -5.699   0.890  1.00  0.00           H  
+HETATM   17  H   UNL A   1       0.504  -4.413   0.000  1.00  0.00           H  
+HETATM   18  H   UNL A   1       1.374  -5.699  -0.890  1.00  0.00           H  
+CONECT    1    2
+CONECT    2    1    3    4
+CONECT    3    2    8    9
+CONECT    4    2    5   10   11
+CONECT    5    4    6   12   13
+CONECT    6    5    7   14   15
+CONECT    7    6   16   17   18
+CONECT    8    3
+CONECT    9    3
+CONECT   10    4
+CONECT   11    4
+CONECT   12    5
+CONECT   13    5
+CONECT   14    6
+CONECT   15    6
+CONECT   16    7
+CONECT   17    7
+CONECT   18    7
+END

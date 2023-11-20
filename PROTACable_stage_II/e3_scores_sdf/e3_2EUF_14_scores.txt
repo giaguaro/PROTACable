@@ -1,0 +1,2 @@
+e3_2EUF_14_scores.txt
+Mdm2_2EUF_14.pdb,-14.396376

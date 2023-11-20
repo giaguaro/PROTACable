@@ -1,0 +1,2 @@
+e3_5EKO_3_scores.txt
+VHL_5EKO_3.pdb,-13.025263

@@ -1,0 +1,79 @@
+REMARK  99                                                                      
+REMARK  99 MOE v2022.02 (Chemical Computing Group ULC) Sun Nov 12 21:56:39 2023 
+HETATM    1  O91 UNL A   1      -3.125   8.563   0.000  1.00  0.00           O  
+HETATM    2  C   UNL A   1      -4.423   9.315   0.000  1.00  0.00           C  
+HETATM    3  C   UNL A   1      -5.723   8.567   0.000  1.00  0.00           C  
+HETATM    4  O   UNL A   1      -7.021   9.319   0.000  1.00  0.00           O  
+HETATM    5  C   UNL A   1      -8.321   8.570   0.000  1.00  0.00           C  
+HETATM    6  C   UNL A   1      -9.619   9.322   0.000  1.00  0.00           C  
+HETATM    7  O   UNL A   1     -10.920   8.574   0.000  1.00  0.00           O  
+HETATM    8  C   UNL A   1     -12.217   9.326   0.000  1.00  0.00           C  
+HETATM    9  C   UNL A   1     -13.518   8.578   0.000  1.00  0.00           C  
+HETATM   10  O   UNL A   1     -14.816   9.330   0.000  1.00  0.00           O  
+HETATM   11  C   UNL A   1     -16.116   8.582   0.000  1.00  0.00           C  
+HETATM   12  C   UNL A   1     -17.414   9.333   0.000  1.00  0.00           C  
+HETATM   13  O   UNL A   1     -18.714   8.585   0.000  1.00  0.00           O  
+HETATM   14  C   UNL A   1     -20.012   9.337   0.000  1.00  0.00           C  
+HETATM   15  C   UNL A   1     -21.312   8.589   0.000  1.00  0.00           C  
+HETATM   16  O94 UNL A   1     -21.314   7.089   0.000  1.00  0.00           O  
+HETATM   17  N   UNL A   1     -22.610   9.341   0.000  1.00  0.00           N1+
+HETATM   18  H   UNL A   1      -3.113   8.004  -0.780  1.00  0.00           H  
+HETATM   19  H   UNL A   1      -4.422   9.944  -0.890  1.00  0.00           H  
+HETATM   20  H   UNL A   1      -4.422   9.944   0.890  1.00  0.00           H  
+HETATM   21  H   UNL A   1      -5.724   7.938   0.890  1.00  0.00           H  
+HETATM   22  H   UNL A   1      -5.724   7.938  -0.890  1.00  0.00           H  
+HETATM   23  H   UNL A   1      -8.322   7.941   0.890  1.00  0.00           H  
+HETATM   24  H   UNL A   1      -8.322   7.941  -0.890  1.00  0.00           H  
+HETATM   25  H   UNL A   1      -9.618   9.951  -0.890  1.00  0.00           H  
+HETATM   26  H   UNL A   1      -9.618   9.951   0.890  1.00  0.00           H  
+HETATM   27  H   UNL A   1     -12.216   9.955  -0.890  1.00  0.00           H  
+HETATM   28  H   UNL A   1     -12.216   9.955   0.890  1.00  0.00           H  
+HETATM   29  H   UNL A   1     -13.519   7.949   0.890  1.00  0.00           H  
+HETATM   30  H   UNL A   1     -13.519   7.949  -0.890  1.00  0.00           H  
+HETATM   31  H   UNL A   1     -16.117   7.953   0.890  1.00  0.00           H  
+HETATM   32  H   UNL A   1     -16.117   7.953  -0.890  1.00  0.00           H  
+HETATM   33  H   UNL A   1     -17.413   9.962  -0.890  1.00  0.00           H  
+HETATM   34  H   UNL A   1     -17.413   9.962   0.890  1.00  0.00           H  
+HETATM   35  H   UNL A   1     -20.011   9.966  -0.890  1.00  0.00           H  
+HETATM   36  H   UNL A   1     -20.011   9.966   0.890  1.00  0.00           H  
+HETATM   37  H   UNL A   1     -22.608  10.351   0.000  1.00  0.00           H  
+HETATM   38  H   UNL A   1     -23.486   8.838   0.000  1.00  0.00           H  
+CONECT    1   18    2
+CONECT    2    1    3   19   20
+CONECT    3    2    4   21   22
+CONECT    4    3    5
+CONECT    5    4    6   23   24
+CONECT    6    5    7   25   26
+CONECT    7    6    8
+CONECT    8    7    9   27   28
+CONECT    9    8   10   29   30
+CONECT   10    9   11
+CONECT   11   10   12   31   32
+CONECT   12   11   13   33   34
+CONECT   13   12   14
+CONECT   14   13   15   35   36
+CONECT   15   14   16   17
+CONECT   16   15
+CONECT   17   15   37   38
+CONECT   18    1
+CONECT   19    2
+CONECT   20    2
+CONECT   21    3
+CONECT   22    3
+CONECT   23    5
+CONECT   24    5
+CONECT   25    6
+CONECT   26    6
+CONECT   27    8
+CONECT   28    8
+CONECT   29    9
+CONECT   30    9
+CONECT   31   11
+CONECT   32   11
+CONECT   33   12
+CONECT   34   12
+CONECT   35   14
+CONECT   36   14
+CONECT   37   17
+CONECT   38   17
+END
