@@ -71,7 +71,7 @@ Once ProPOSE software and license is obtained place them in the ```PROTACable_st
 
 Only Maestro's PrepWizard will be used and will be used only in Stage 5. This tool will serve the purpose of minimization of the selected ternary complexes modelled throughout the pipeline. 
 
-- **SLURM**: You need to modify `${PROTACable}/PROTACable_stage_III/submit_jobs.sh` and `${PROTACable}/PROTACable_stage_II/bash_propose.sh`
+- **SLURM**: You need to modify `${PROTACable}/PROTACable_stage_III/submit_jobs.sh` and `${PROTACable}/PROTACable_stage_II/bash_propose.sh` for appropriate node partition and other SLURM scheduler settings.
 
 ## Usage
 
