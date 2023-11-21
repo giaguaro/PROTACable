@@ -23,6 +23,8 @@ The concept of an end-to-end in silico pipeline is quite enticing. You may only 
 
 We kindly ask you that if you find this pipeline to cite us appropriately. If you find us before publication, please return here to find our paper. 
 
+![SE3 Scheme](./assets/protacable_architecture.png)
+
 ## Requirements
 
 Different stages of PROTACable pipeline have variable set of requirements.
@@ -154,7 +156,6 @@ sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
 The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
 
 ### Stage 4: SE(3) Transformer Network Score Prediction
-![SE3 Scheme](./assets/protacable_architecture.png)
 
 We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
 
