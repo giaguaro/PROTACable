@@ -41,7 +41,7 @@ for filepath in ternaries/*/top_20_pooled*/for_linker; do
         model_nb=${model_%%.*}
         echo "Now processing ${filepath} with model number ${model_nb}"
         e3_lig=$(ls ${filepath}/e3_lig_pp_model_*${model_nb}.pdb)
-        sbatch ${PROTACable}/submit_jobs.sh $pocket $poi_lig $e3_lig
+        sbatch ${PROTACable}/PROTACable_stage_III/submit_jobs.sh $pocket $poi_lig $e3_lig
     done
 done
 
