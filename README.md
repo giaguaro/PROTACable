@@ -148,7 +148,7 @@ sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
 The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
 
 ### Stage 4: SE(3) Transformer Network Score Prediction
-![SE3 Scheme](./assets/PROTACable_architecture.png)
+![SE3 Scheme](./assets/protacable_architecture.png)
 
 We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
 
