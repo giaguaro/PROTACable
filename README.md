@@ -9,11 +9,11 @@ PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Stage 1: Docking POI and Elaborating Variations](#stage-1-docking-poi-and-elaborating-variations)
-- [Stage 2: POI-E3 Docking and Pose Filtering](#stage-2-poi-e3-docking-and-pose-filtering)
-- [Stage 3: Linker Ligation and Pose Filtering](#stage-3-linker-ligation-and-pose-filtering)
-- [Stage 4: SE(3) Transformer Network Score Prediction](#stage-4-se-3-transformer-network-score-prediction)
-- [Stage 5: Ternary Complex Minimization](#stage-5-ternary-complex-minimization)
+- [Stage I: Docking POI and Elaborating Variations](#stage-1-docking-poi-and-elaborating-variations)
+- [Stage II: POI-E3 Docking and Pose Filtering](#stage-2-poi-e3-docking-and-pose-filtering)
+- [Stage III: Linker Ligation and Pose Filtering](#stage-3-linker-ligation-and-pose-filtering)
+- [Stage IV: SE(3) Transformer Network Score Prediction](#stage-4-se-3-transformer-network-score-prediction)
+- [Stage V: Ternary Complex Minimization](#stage-5-ternary-complex-minimization)
 - [References](#references)
 - [License](#license)
 
@@ -26,7 +26,7 @@ Different stages of PROTACable pipeline have variable set of requirements.
 * See [Installation](#installation) below.
 ### Linux OS:
 * This toolkit collection had been tested on Centos 8 OS.
-* SLURM scheduler is needed for Stage 2 (protein-protein docking) due to the way the code was implemented.
+* SLURM scheduler 
 ### Software:
 * Stage 1: GNINA v1.0 (optional).
 * Stage 2: ProPOSE v2022.
@@ -73,7 +73,7 @@ Only Maestro's PrepWizard will be used and will be used only in Stage 5. This to
 
 ## Usage
 
-Due to the complexity of the pipeline, each stage was kept operating separately such that there is a finer control over the output before the subsequent stage is activated. The majority of the stages in the pipeline do more than one task. To get familiar with the tasks refer to our paper: [**doi link here**].
+Due to the complexity of the pipeline, each stage was kept operating separately such that there is a finer control over the output before the subsequent stage is activated. The majority of the stages in the pipeline do more than one task. To get familiar with the tasks refer to our paper.
 
 First, you need to define the PROTACable environment:
 
@@ -81,13 +81,7 @@ First, you need to define the PROTACable environment:
 export PROTACable=/path/to/PROTACable/directory
 ```
 
- Then you need to validate installation by running:
-
-```
-sh $PROTACable/test_installation.sh
-```
-
-Once installation is verified, commence with a new directory where you have the necessary pre-requisites: 
+Commence with a new directory where you have the necessary pre-requisites: 
 
 * POI in PDB format
 * Ligand in PDB or SDF format
@@ -154,7 +148,7 @@ sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
 The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
 
 ### Stage 4: SE(3) Transformer Network Score Prediction
-![SE3 Scheme](./assets/se3_transformer.png)
+![SE3 Scheme](./assets/PROTACable_architecture.png)
 
 We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
 
@@ -171,7 +165,7 @@ In addition, the top 20 sorted predictions are saved in ```ternaries/top_ternari
 The final step is essential if you want a sound looking ternary complex. We rely on Maestro's PrepWizard tool to optimize the path for the linker that connects both POI and E3:
 
 ```
-sh $PROTACable/PROTACable_stage_5/main.sh /path/to/top_ternaries_results
+sh $PROTACable/PROTACable_stage_5/minimize_with_prepwizrd.sh /path/to/top_ternaries_results
 ```
 
 The final results will be stored in ```ternaries_minimized```
