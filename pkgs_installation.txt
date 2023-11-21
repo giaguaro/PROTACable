@@ -1,6 +1,8 @@
 # PROTACable Environment Setup
 
-To set up the `PROTACable` environment, follow these steps:
+To set up the `PROTACable` environment, follow these steps in order:
+
+conda create -n PROTACable python=3.8
 
 conda create --name PROTACable python=3.8
 
