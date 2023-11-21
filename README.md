@@ -53,6 +53,8 @@ conda env create -f PROTACable.yml
 ```
 > [Follow NVIDIA's instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4TWipdwX1) to install the latest version of CUDA (>= 11.0 is required). Make sure `nvcc` is in your PATH.
 
+You may also refer to manually to setup of the environemnt: [Pkgs installation](pkgs_installation.txt)
+
 ### Software:
 
 - **GNINA**: Refer to GNINA official repository - https://github.com/gnina/gnina
