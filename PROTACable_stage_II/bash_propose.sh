@@ -7,6 +7,10 @@
 # Unauthorized copying, modification, or distribution is prohibited.
 # ------------------------------------------------------------------------------------------
 
+#SBATCH --partition=normal
+#SBATCH --job-name=P-PP_dock
+
+
 if [[ -z $SLURM_JOB_ID ]]; then
     echo "Error: This script should be run with SLURM."
     exit 1
