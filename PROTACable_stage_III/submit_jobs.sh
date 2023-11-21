@@ -11,7 +11,7 @@ source ~/.bashrc
 env_exists=$(conda info --envs | grep '^PROTACable ' | wc -l)
 if [[ $env_exists -eq 0 ]]; then
     echo "Error: The 'PROTACable' conda environment does not exist."
-    #exit 1
+    exit 1
 else
     conda activate PROTACable
 fi
