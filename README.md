@@ -37,7 +37,9 @@ Different stages of PROTACable pipeline have variable set of requirements.
 ### Software:
 * Stage 1: GNINA v1.0 (optional).
 * Stage 2: ProPOSE v2022.
-* Stage 5: Maestro Schrödinger (Optional and preferred to have for final structure relaxation and visualization).
+* Stage 5: Maestro Schrödinger (Optional and preferred to have for final structure relaxation).
+> **Note:** You can replace the PrepWizard with any other preferred tool for performing structure minimization.
+
 ### Hardware:
 * CUDA >= 11.0 (optional)
 
