@@ -16,12 +16,13 @@ PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 - [Stage V: Ternary Complex Minimization](#stage-5-ternary-complex-minimization)
 - [References](#references)
 - [License](#license)
+- [Citation](#citation)
 
 ## Preliminary
 
-The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in companies specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs without any knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of hard work. 
+The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in companies specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs without any knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of dedicated work. 
 
-#### ***We kindly ask you that if you find this pipeline useful to cite us appropriately. If you find us before publication, please return here to find our paper.***
+#### ***We kindly ask you that if you find this pipeline useful to cite us appropriately.***
 
 ![SE3 Scheme](./assets/protacable_architecture.png)
 
@@ -189,3 +190,8 @@ This marks the end of the PROTACable modelling pipeline.
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+### Citation
+
+Hazem Mslati, Francesco Gentile, Mohit Pandey, Fuqiang Ban, Artem Cherkasov. "PROTACable: An Integrative Computational Pipeline of 3-D Modeling and Deep Learning to Automate the De Novo Design of PROTACs." *bioRxiv* (2023). doi: [10.1101/2023.11.20.567951](https://doi.org/10.1101/2023.11.20.567951).
+
