@@ -24,7 +24,7 @@ The concept of an end-to-end in silico pipeline is quite enticing. You may only 
 
 #### ***We kindly ask you that if you find this pipeline useful to cite us appropriately.***
 
-![SE3 Scheme](./assets/se3_transformer_2.png)
+![SE3 Scheme](./assets/se3_transformer_2_architecture.png)
 
 Architecture of the PROTACable pipeline.
 
