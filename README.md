@@ -20,11 +20,13 @@ PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 
 ## Preliminary
 
-The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in companies specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs without any knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of dedicated work. 
+The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in biotech specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs without any knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of dedicated work. 
 
 #### ***We kindly ask you that if you find this pipeline useful to cite us appropriately.***
 
-![SE3 Scheme](./assets/protacable_architecture.png)
+![SE3 Scheme](./assets/se3_transformer_2.png)
+
+Architecture of the PROTACable pipeline.
 
 ## Requirements
 
