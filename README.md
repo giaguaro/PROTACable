@@ -20,7 +20,7 @@ PROTACable is an end-to-end in-silico design toolkit for novel PROTACs
 
 ## Preliminary
 
-The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in biotech specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs without any knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of dedicated work. 
+The concept of an end-to-end in silico pipeline is quite enticing. You may only find it in biotech specialized for this type of task. Now we offer this to the public as an accessible package. Yes, you can now design and validate in silico your PROTACs with limited knowledge of PROTACs. And you can do it affordably and at a high quality similar to high-end companies. This is the culmination of 3 years of dedicated work. 
 
 #### ***We kindly ask you that if you find this pipeline useful to cite us appropriately.***
 
@@ -38,7 +38,7 @@ Different stages of PROTACable pipeline have variable set of requirements.
 * SLURM scheduler 
 ### Software:
 * Stage 1: GNINA v1.0 (optional).
-* Stage 2: ProPOSE v2022.
+* Stage 2: ProPOSE v2022. (Mandatory)
 * Stage 5: Maestro PrepWizard (optional and preferred to have for final structure relaxation).
 > **Note:** You can replace the PrepWizard with any other preferred tool for performing structure minimization.
 
