@@ -106,13 +106,13 @@ This stage is broken into two parts: docking and creating R-group variations for
 + You can optionally dock your POI with the cognate ligand (if it's not already complexed with the ligand pose):
 
 ```
-sh $PROTACable/PROTACable_stage_1/dock_poi.sh -i <input PDB file> -l <input ligand in SDF format> -w <number of workers>
+sh $PROTACable/PROTACable_stage_I/dock_poi.sh -i <input PDB file> -l <input ligand in SDF format> -w <number of workers>
 ```
 
 + It is recommended to generate variations of the R-group for linker ligation using the docked PDB ligand (generated from above) or by extracting it from an existing PDB file of the POI-Lig complex. You can generated variations programmatically using the PDB file of the ligand and an exit vector. The exit vector here refers to the index which corresponds to the atom you want the linker to be attached to. 
 
 ```
-python $PROTACable/PROTACable_stage_1/make_variations.py <ligand in PDB format> <exit vector> <output prefix>
+python $PROTACable/PROTACable_stage_I/make_variations.py <ligand in PDB format> <exit vector> <output prefix>
 ```
 > **Tip:** Once you decide on the atom you think is apt for linker ligation (usually an atom that is in maximally solvent exposed moiety), you may take note of the atom number (atom label). You can then find the corresponding index by opening the PDB file in a text viewer and locating the atom with the sought atom number. The exit vector will be exactly that atom's serial number. Refer to [PDB format guide](https://www.biostat.jhsph.edu/~iruczins/teaching/260.655/links/pdbformat.pdf) for further clarification.
 
@@ -121,7 +121,7 @@ This will generate two variations with carboxyl ```C(=O)O``` ${outout_prefix}_ca
 Next, you need to "radiolabel" the POI such that the exit vector is updated to reflect the new linker attachment site. The new exit vector for the amide and carboxyl variations are usually the last atom in the HETATM records.
 
 ```
-python $PROTACable/PROTACable_stage_1/radiolabel_poi.py <pdb_file_path> <exit_vector_index> 
+python $PROTACable/PROTACable_stage_I/radiolabel_poi.py <pdb_file_path> <exit_vector_index> 
 ```
 
 ### Stage 2: POI-E3 Docking and Pose Filtering
@@ -139,7 +139,7 @@ cat POI_Lig_amide_clean.pdb POI_clean.pdb >> POI_Lig_amide_complex.pdb
 Now you can issue the docking commands:
 
 ```
-sbatch $PROTACable/PROTACable_stage_2/main.sh -P POI_Lig_amide_complex.pdb
+sbatch $PROTACable/PROTACable_stage_II/main.sh -P POI_Lig_amide_complex.pdb
 ```
 
 This will generate a ```ternaries``` directory with different E3 ligase - Ligand complex docking solutions. 
@@ -155,7 +155,7 @@ We can now proceed with linker ligation. A library of 1236 linkers will be lever
 Very simply, you can issue this command:
 
 ```
-sh $PROTACable/PROTACable_stage_3/main.sh /path/to/ternaries/directory
+sh $PROTACable/PROTACable_stage_III/main.sh /path/to/ternaries/directory
 ```
 
 The resulting shortlisted ternary complexes will be stored in ```ternaries/output_stage_3_4/```
@@ -165,7 +165,7 @@ The resulting shortlisted ternary complexes will be stored in ```ternaries/outpu
 We are ready to predict the scores of the resulting ternary complexes using the pre-trained SE(3) transformer:
 
 ```
-sh $PROTACable/PROTACable_stage_4/main.sh /path/to/ternaries/output_stage_3_4/
+sh $PROTACable/PROTACable_stage_IV/main.sh /path/to/ternaries/output_stage_3_4/
 ```
 
 A ```predictions_and_targets.csv``` will be saved in ```ternaries/output_stage_3_4/``` detailling the probability each ternary complex is active.
@@ -177,7 +177,7 @@ In addition, the top 20 sorted predictions are saved in ```ternaries/top_ternari
 The final step is essential if you want a sound looking ternary complex. We rely on Maestro's PrepWizard tool to optimize the path for the linker that connects both POI and E3:
 
 ```
-sh $PROTACable/PROTACable_stage_5/minimize_with_prepwizrd.sh /path/to/top_ternaries_results
+sh $PROTACable/PROTACable_stage_V/minimize_with_prepwizrd.sh /path/to/top_ternaries_results
 ```
 
 The final results will be stored in ```ternaries_minimized```
