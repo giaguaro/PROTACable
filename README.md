@@ -72,7 +72,7 @@ You may also refer to manually to setup of the environemnt: [Pkgs installation](
   
 Once GNINA is installed place it in the ```PROTACable_stage_1/utilities``` directory.
  
-- **ProPOSE**: Refer to ProPOSE official website for academic licensing - https://mm.nrc-cnrc.gc.ca/ccbpub/propose_main.php
+- **ProPOSE**: Refer to ProPOSE official website for free academic licensing - https://mm.nrc-cnrc.gc.ca/ccbpub/propose_main.php
 
 Once ProPOSE software and license is obtained place them in the ```PROTACable_stage_2/ProPOSE``` directory.
 
