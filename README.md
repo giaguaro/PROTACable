@@ -53,7 +53,7 @@ To get started with PROTACable, follow these instructions:
 ```
 git clone https://github.com/giaguaro/PROTACable.git 
 cd PROTACable
-export PROTACable=${pwd}
+export PROTACable=$(pwd)
 ```
 > **Note:** You need to have the environment variable defined at all times during running any part of the code.
 
