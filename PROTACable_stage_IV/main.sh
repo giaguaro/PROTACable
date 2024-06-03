@@ -25,8 +25,8 @@ input_dir_="$1"
 input_dir=$(realpath "$input_dir_")
 ligand_dir_=${input_dir}/ligands
 ligand_dir=$(realpath "$ligand_dir_")
-utils_dir="${PROTACable}/PROTACable_stage_4/model/embed" 
-checkpoint="${PROTACable}/PROTACable_stage_4/model/checkpoint/epoch_50-val_auc_roc_0.936-val_acc_0.913-val_f1_0.923-val_loss_0.302.ckpt"
+utils_dir="${PROTACable}/PROTACable_stage_IV/model/embed" 
+checkpoint="${PROTACable}/PROTACable_stage_IV/model/checkpoint/epoch_50-val_auc_roc_0.936-val_acc_0.913-val_f1_0.923-val_loss_0.302.ckpt"
 
 init_pwd=$(pwd)
 
